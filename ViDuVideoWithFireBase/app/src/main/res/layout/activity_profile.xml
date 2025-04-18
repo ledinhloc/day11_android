@@ -52,6 +52,12 @@
             android:text="Tải lên" />
 
         <!-- Progress bar -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay về màn hình chính" />
+
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="match_parent"
