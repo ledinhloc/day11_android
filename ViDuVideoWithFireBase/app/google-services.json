@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "586845419292",
+    "firebase_url": "https://videoshort-78e85-default-rtdb.firebaseio.com",
+    "project_id": "videoshort-78e85",
+    "storage_bucket": "videoshort-78e85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586845419292:android:d23e795fc6343525252cd9",
+        "android_client_info": {
+          "package_name": "com.example.viduvideowithfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDytI2HfOt_o19nIvIT6voh9407BBllm18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
 package com.example.viduvideowithfirebase;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager2;
     private VideosFireBaseAdapter videoAdapter;
+    private Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        intent = getIntent();
+        String email = intent.getStringExtra("email");
+
 
         viewPager2 = findViewById(R.id.vpager);
         getVideos();

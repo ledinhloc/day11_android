@@ -7,6 +7,15 @@ public class Video1Model implements Serializable {
     private String desc;
     private String url;
 
+    public Video1Model() {
+    }
+
+    public Video1Model(String title, String desc, String url) {
+        this.title = title;
+        this.desc = desc;
+        this.url = url;
+    }
+
     public String getDesc() {
         return desc;
     }

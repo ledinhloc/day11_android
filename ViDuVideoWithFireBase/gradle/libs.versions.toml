@@ -1,5 +1,6 @@
 [versions]
 agp = "8.2.2"
+cloudinaryAndroid = "2.4.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -12,13 +13,14 @@ auth="21.3.0"
 firebaseAuth="23.2.0"
 firebaseDatabase="21.0.0"
 firebaseBom="33.12.0"
-firebaseFirestore="24.4.5"
-firebaseStorage="20.1.0"
+firebaseFirestore="25.1.3"
+firebaseStorage="21.0.1"
 firebaseUiDatabase="8.0.1"
 
 
 
 [libraries]
+cloudinary-android = { module = "com.cloudinary:cloudinary-android", version.ref = "cloudinaryAndroid" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -28,12 +30,13 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "auth" }
+
 firebaseAuth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebaseDatabase = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
-firebaseDatabaseKtx = { group = "androidx.activity", name = "firebase-database-ktx" }
-firebaseFirestore = { group = "androidx.activity", name = "firebase-firestore", version.ref = "firebaseFirestore" }
-firebaseStorage = { group = "androidx.activity", name = "firebase-storage", version.ref = "firebaseStorage" }
+firebaseDatabaseKtx = { group = "com.google.firebase", name = "firebase-database-ktx" }
+firebaseFirestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+firebaseStorage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 firebaseUiDatabase = { group = "com.firebaseui", name = "firebase-ui-database", version.ref = "firebaseUiDatabase" }
 
 [plugins]

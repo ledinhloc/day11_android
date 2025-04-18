@@ -1,5 +1,9 @@
 package com.example.viduvideowithfirebase;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -60,6 +64,15 @@ public class VideosFireBaseAdapter extends FirebaseRecyclerAdapter<Video1Model, 
                     holder.favorites.setImageResource(R.drawable.heart);
                     isFav = false;
                 }
+            }
+        });
+
+        holder.inPerson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context = view.getContext(); // lấy context từ view
+                Intent intent = new Intent(context, ProfileActivity.class);
+                context.startActivity(intent); // dùng context để start
             }
         });
     }
